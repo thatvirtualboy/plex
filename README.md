@@ -13,3 +13,6 @@ Bash scripts for Plex Postprocessing
 ## Shout out
 Original inspiration for this script came from [this post](http://forums.plex.tv/discussion/280289/plexdvr-post-processing-script-comcut-ccextractor-and-ffmpeg#latest)
 
+## Usage
+* Be sure to change permissions on the .sh file, something like chmod 777 or u+x
+* Edit the script to put the paths to your Comcut and HandBrake-CLI locations
