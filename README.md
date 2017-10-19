@@ -3,6 +3,8 @@ Bash scripts for Plex Postprocessing
 
 ## Prerequisites
 1. Comcut
+   * Comskip
+   * ffmpeg
 2. Handbrake-CLI
 
 ## My Environment
