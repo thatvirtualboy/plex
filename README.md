@@ -10,6 +10,8 @@ Bash scripts for Plex Postprocessing
 * 4vCPU / 2GB RAM
 * AMD A-10 6800k APU in host running Windows 10
 
+This script is used to run comcut on recordings, then transcode using handbrake and the Apple TV 1080p preset. 
+
 ## Shout out
 Original inspiration for this script came from [this post](http://forums.plex.tv/discussion/280289/plexdvr-post-processing-script-comcut-ccextractor-and-ffmpeg#latest)
 
