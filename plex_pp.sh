@@ -42,7 +42,7 @@ echo "'$time' File rename started" | tee -a $dvrPostLog
 mv -f "$tmpFile" "$inFile"
 
 #Remove lock file
-echo "'$time' Done processing '$inFile' Removing lock" | tee -a $dvrPostLog
+echo "'$time' All done! Removing lock for '$inFile'" | tee -a $dvrPostLog
 rm $lockFile
 
 exit 0
