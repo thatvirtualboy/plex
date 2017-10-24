@@ -35,7 +35,7 @@ $cut "$inFile"
 
 # Encode file to MP4 with handbrake-cli
 echo "'$time' Transcoding started on '$inFile'" | tee -a $dvrPostLog
-$handbrake -i "$inFile" -o "$tmpFile" --preset="Apple 1080p30 Surround" --encoder-preset="veryfast"
+$handbrake -i "$inFile" -o "$tmpFile" --preset="Apple 1080p30 Surround" --encoder-preset="veryfast" -O
 
 # Overwrite original ts file with the transcoded file
 echo "'$time' File rename started" | tee -a $dvrPostLog
