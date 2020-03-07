@@ -1,4 +1,6 @@
 # Plex DVR Postprocessing
+[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/phiredrop)
+
 Bash scripts for Plex Postprocessing
 
 ## Prerequisites
