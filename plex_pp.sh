@@ -19,10 +19,13 @@ cut=/PATH/TO/YOUR/COMCUT/INSTALL (mine is /home/ryan/comchap/comcut)
 echo "'$time' Plex DVR Postprocessing script started" | tee $dvrPostLog
 
 # Check if post processing is already running
+sleep $(( $RANDOM % 10 + 0 ))
+if test -f $lockFile;then
+    echo -e "\e[1;33m"$(date '+%Y-%m-%d %H:%M:%S') "'$lockFile' exists, sleeping processing of '$inFile'""\e[0m" | tee -a $dvrPostLog
+fi
 while [ -f $lockFile ]
 do
-    echo "'$time' $lockFile' exists, sleeping processing of '$inFile'" | tee -a $dvrPostLog
-    sleep 10
+    sleep 20
 done
 
 # Create lock file to prevent other post-processing from running simultaneously
