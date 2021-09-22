@@ -17,7 +17,7 @@ cut=/PATH/TO/YOUR/COMCUT/INSTALL (mine is /home/ryan/comchap/comcut)
 
 function timestamp {
     echo $(date '+%Y-%m-%d %H:%M:%S')
-    return 1
+    return 0
 }
 
 echo $(timestamp) "Plex DVR Postprocessing script started" | tee $dvrPostLog
